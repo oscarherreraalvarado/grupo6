@@ -3,6 +3,8 @@
     <style name="Base.Theme.Grupo6" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#A7A7A7</item>
+        <item name="android:navigationBarColor">@color/white</item>
     </style>
 
     <style name="Theme.Grupo6" parent="Base.Theme.Grupo6" />

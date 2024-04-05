@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">grupo6</string>
+    <string name="app_name">Car Wash\nEl Catracho</string>
+    <string name="log_in_string">Log In</string>
+    <string name="__a_n_no_tienes_unas_cuenta__registrate_string">An no tienes unas cuenta? Registrate</string>
+    <string name="LogIn">Iniciar sesión</string>
+    <string name="fondo">fondo</string>
+    <string name="registrate">Registrate\n</string>
+    <string name="aunnotienesunacuenta">¿Aún no tienes una cuenta?</string>
+    <string name="btnregistrate">Botón para registrarse</string>
+    <string name="contraseniaolvidada">¿Ha olvidado su contraseña?</string>
+    <string name="bienvenido">Bienvenido a Car Wash \nEL CATRACHO</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="contrasenia2">Confirmar contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="celular">Celular</string>
+    <string name="verificacion">Hemos enviado un código de verificación \n a tu correo electrónico, por favor introdúcelo:</string>
+    <string name="introducir">Introducir código</string>
+    <string name="verificar">Verificar</string>
+    <string name="confirmar">Confirmar correo</string>
 </resources>
