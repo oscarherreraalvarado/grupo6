@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881697046745",
+    "project_id": "grupo6-2b28a",
+    "storage_bucket": "grupo6-2b28a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881697046745:android:2e8ae753f96efd0062bec8",
+        "android_client_info": {
+          "package_name": "com.example.grupo6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhgqo4oqucmtMeWaIkPWvvGyDlaa8Lw3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
