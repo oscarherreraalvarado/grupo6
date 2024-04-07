@@ -121,23 +121,24 @@ public class ActivityLogIn_SignUp extends AppCompatActivity {
 
                 //---------VALIDACIONES-----------
 
-                if (username.isEmpty()) {
-                    txtNombre.setError("Campo obligatorio");
-                } else if (celular.isEmpty()) {
-                    txtCelular.setError("Campo obligatorio");
-                } else if (correo.isEmpty()) {
-                    txtCorreo.setError("Campo obligatorio");
-                } else if (contra.isEmpty() || confirContra.isEmpty()) {
-                    Toast.makeText(this, "Favor establecer la contraseña.", Toast.LENGTH_SHORT).show();
-                } else if (celular.length()!=8) {
-                    Toast.makeText(this, "El campo celular debe contener 8 dígitos.", Toast.LENGTH_SHORT).show();
-                } else {
-                    if (contra.equals(confirContra)) {
-
-                    } else {
-                        Toast.makeText(this, "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show();
-                    }
-                }
+//                if (username.isEmpty()) {
+//                    txtNombre.setError("Campo obligatorio");
+//                } else if (celular.isEmpty()) {
+//                    txtCelular.setError("Campo obligatorio");
+//                } else if (correo.isEmpty()) {
+//                    txtCorreo.setError("Campo obligatorio");
+//                } else if (contra.isEmpty() || confirContra.isEmpty()) {
+//                    Toast.makeText(this, "Favor establecer la contraseña.", Toast.LENGTH_SHORT).show();
+//                } else if (celular.length()!=8) {
+//                    Toast.makeText(this, "El campo celular debe contener 8 dígitos.", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    if (contra.equals(confirContra)) {
+                        Intent intent=new Intent(getApplicationContext(),ActivityConfirm.class);
+                        startActivity(intent);
+//                    } else {
+//                        Toast.makeText(this, "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show();
+//                    }
+//                }
 
 
             });
