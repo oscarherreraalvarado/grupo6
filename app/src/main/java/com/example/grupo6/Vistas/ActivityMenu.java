@@ -37,7 +37,8 @@ public class ActivityMenu extends AppCompatActivity {
         citas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ActivityMenu.this, "Citas", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), ActivityCitas.class);
+                startActivity(intent);
             }
         });
 

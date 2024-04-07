@@ -18,4 +18,19 @@
     <string name="introducir">Introducir código</string>
     <string name="verificar">Verificar</string>
     <string name="confirmar">Confirmar correo</string>
+
+    <string name="titleCitas">Citas</string>
+    <string name="AddCita">Agregar una cita</string>
+    <string name="dateCita">Fecha de la cita</string>
+    <string name="back_button_description">Volver atras</string>
+    <string name="save_button_description">Guardar cita</string>
+    <string name="Citas">Titulo citas</string>
+    <string name="Citas_title">Citas</string>
+    <string name="calendar_icon_description">Calendario</string>
+    <string name="AddCitaTitle">Agregar una cita</string>
+    <string name="timeTilte">Hora de la cita</string>
+    <string name="titleVehiculo">Vehículo</string>
+    <string name="serviceCita">Servicio de la cita</string>
+    <string name="CenterService">Centro de atención</string>
+    <string name="Servicios">Servicios</string>
 </resources>
