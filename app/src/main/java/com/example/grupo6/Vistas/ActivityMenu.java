@@ -19,7 +19,7 @@ import com.example.grupo6.R;
 public class ActivityMenu extends AppCompatActivity {
 
     Toolbar toolbar;
-    LinearLayout citas, ordenes;
+    LinearLayout citas, ordenes, servicios, locales;
     ImageView cerrarSesion;
 
     @Override
@@ -30,6 +30,8 @@ public class ActivityMenu extends AppCompatActivity {
         //---------CASTING-----------
         citas = (LinearLayout) findViewById(R.id.citas);
         ordenes = (LinearLayout) findViewById(R.id.ordenes);
+        servicios= (LinearLayout) findViewById(R.id.servicios);
+        locales= (LinearLayout) findViewById(R.id.locales);
         cerrarSesion = (ImageView) findViewById(R.id.cerrarSesion);
 
         citas.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +49,21 @@ public class ActivityMenu extends AppCompatActivity {
             }
         });
 
+        servicios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityServicios.class);
+                startActivity(intent);
+            }
+        });
+
+        locales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityLocales.class);
+                startActivity(intent);
+            }
+        });
         cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

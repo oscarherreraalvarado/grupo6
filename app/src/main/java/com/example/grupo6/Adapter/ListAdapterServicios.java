@@ -8,20 +8,19 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.example.grupo6.Config.Servicios;
 import com.example.grupo6.R;
 
 import java.util.List;
 
-public class ListAdapterDetalle extends RecyclerView.Adapter<ListAdapterDetalle.ViewHolder> {
+public class ListAdapterServicios extends RecyclerView.Adapter<ListAdapterServicios.ViewHolder> {
 
     private List<Servicios> datos;
     private LayoutInflater inflater;
     private Context context;
     //public static int selectedItem = -1;
 
-    public ListAdapterDetalle(List<Servicios> itemList, Context context) {
+    public ListAdapterServicios(List<Servicios> itemList, Context context) {
         this.inflater = LayoutInflater.from(context);
         this.context = context;
         this.datos = itemList;
@@ -37,13 +36,13 @@ public class ListAdapterDetalle extends RecyclerView.Adapter<ListAdapterDetalle.
     //}
 
     @Override
-    public ListAdapterDetalle.ViewHolder onCreateViewHolder(ViewGroup parent, int viewtype) {
-        View view = inflater.inflate(R.layout.disenio_servicio_detalle_orden, null);
-        return new ListAdapterDetalle.ViewHolder(view);
+    public ListAdapterServicios.ViewHolder onCreateViewHolder(ViewGroup parent, int viewtype) {
+        View view = inflater.inflate(R.layout.disenio_servicios, null);
+        return new ListAdapterServicios.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(final ListAdapterDetalle.ViewHolder holder, final int position) {
+    public void onBindViewHolder(final ListAdapterServicios.ViewHolder holder, final int position) {
         holder.bindData(datos.get(position));
 
         //PARA QUE EL SELECTOR FUNCIONE
@@ -71,16 +70,16 @@ public class ListAdapterDetalle extends RecyclerView.Adapter<ListAdapterDetalle.
 
         ViewHolder(View itemView) {
             super(itemView);
-            nombre = (TextView) itemView.findViewById(R.id.nombre);
-            cantidad=(TextView) itemView.findViewById(R.id.cantidad);
-            precio=(TextView) itemView.findViewById(R.id.precio);
+            nombre = (TextView) itemView.findViewById(R.id.nombreServicios);
+            cantidad=(TextView) itemView.findViewById(R.id.cantidadServicios);
+            precio=(TextView) itemView.findViewById(R.id.precioServicios);
 
         }
 
-        void bindData(final Servicios detalleOrden) {
-            nombre.setText(detalleOrden.getNombre());
-            cantidad.setText(detalleOrden.getCantidad());
-            precio.setText(detalleOrden.getPrecio());
+        void bindData(final Servicios servicios) {
+            nombre.setText(servicios.getNombre());
+            cantidad.setText(servicios.getCantidad());
+            precio.setText(servicios.getPrecio());
         }
     }
 
