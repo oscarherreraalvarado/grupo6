@@ -5,36 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    app:cardBackgroundColor="@color/white"
+    app:cardBackgroundColor="@color/gris"
     app:cardElevation="0dp">
 
     <LinearLayout
         android:id="@+id/ordenes"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="83dp"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/borde_fondogris"
+        android:background="@drawable/borde"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/icono_ordenes"
             android:layout_width="71dp"
             android:layout_height="82dp"
-            android:src="@drawable/servicios_icon" />
+            android:src="@drawable/orden_icon" />
 
         <LinearLayout
-            android:layout_width="251dp"
-            android:layout_height="82dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/nombre"
+                android:id="@+id/nombreServicios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -44,7 +44,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/cantidad"
+                android:id="@+id/cantidadServicios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cantidad: 1"
@@ -53,7 +53,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/precio"
+                android:id="@+id/precioServicios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Precio: 100 LPS"

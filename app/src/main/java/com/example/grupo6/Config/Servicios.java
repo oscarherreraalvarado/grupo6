@@ -1,13 +1,13 @@
 package com.example.grupo6.Config;
 
-public class DetalleOrden {
+public class Servicios {
 
     private String numOrden;
     private String nombre;
     private String cantidad;
     private String precio;
 
-    public DetalleOrden(String numOrden, String nombre, String cantidad, String precio) {
+    public Servicios(String numOrden, String nombre, String cantidad, String precio) {
         this.numOrden = numOrden;
         this.nombre = nombre;
         this.cantidad = cantidad;
