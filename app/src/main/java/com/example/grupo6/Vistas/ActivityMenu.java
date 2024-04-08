@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +20,8 @@ import com.example.grupo6.R;
 public class ActivityMenu extends AppCompatActivity {
 
     Toolbar toolbar;
-    LinearLayout citas, ordenes, servicios, locales;
+    LinearLayout citas, ordenes, servicios, locales, vehiculos;
+    ImageView perfil;
     ImageView cerrarSesion;
 
     @Override
@@ -32,6 +34,8 @@ public class ActivityMenu extends AppCompatActivity {
         ordenes = (LinearLayout) findViewById(R.id.ordenes);
         servicios= (LinearLayout) findViewById(R.id.servicios);
         locales= (LinearLayout) findViewById(R.id.locales);
+        vehiculos= (LinearLayout) findViewById(R.id.vehiculos);
+        perfil= (ImageView) findViewById(R.id.perfil);
         cerrarSesion = (ImageView) findViewById(R.id.cerrarSesion);
 
         citas.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +66,21 @@ public class ActivityMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ActivityLocales.class);
+                startActivity(intent);
+            }
+        });
+
+        vehiculos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityVehiculos.class);
+                startActivity(intent);
+            }
+        });
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityPerfil.class);
                 startActivity(intent);
             }
         });

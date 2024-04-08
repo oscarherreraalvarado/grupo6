@@ -173,7 +173,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:text="@string/serviceCita"
         android:textColor="@color/black"
@@ -260,6 +260,26 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCentros" />
+
+    <Button
+        android:id="@+id/btn_Agregar"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#59DA44"
+        android:gravity="center"
+        android:onClick="onAddButtonClick"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:stateListAnimator="@null"
+        android:text="Agregar"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:icon="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCentros" />
 

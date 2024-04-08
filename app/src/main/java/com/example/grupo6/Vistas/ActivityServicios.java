@@ -44,6 +44,7 @@ public class ActivityServicios extends AppCompatActivity {
         List<Servicios> detalleOrdens = new ArrayList<>();
         detalleOrdens.add(new Servicios("#2345", "Lavado sencillo", "Cantidad: 1", "Precio: 100 LPS"));
         detalleOrdens.add(new Servicios("#2345", "Lavado sencillo", "Cantidad: 1", "Precio: 100 LPS"));
+        detalleOrdens.add(new Servicios("#2345", "Lavado sencillo", "Cantidad: 1", "Precio: 100 LPS"));
 
         listAdapter=new ListAdapterServicios(detalleOrdens,this);
         RecyclerView recyclerView = findViewById(R.id.recyclerViewServicios);
